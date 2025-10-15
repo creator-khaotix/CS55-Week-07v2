@@ -2,5 +2,9 @@ runConfig:
   minInstances: 0
   maxInstances: 2
 
-secrets:
-  GEMINI_API_KEY: "GEMINI_API_KEY"
+# apphosting.yaml
+
+# This section makes environment variables available to your app
+env:
+  - variable: GEMINI_API_KEY # The name of the environment variable in your code
+    secret: GEMINI_API_KEY   # The name of the secret in Secret Manager
