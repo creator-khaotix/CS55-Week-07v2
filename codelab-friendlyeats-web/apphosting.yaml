@@ -2,14 +2,5 @@ runConfig:
   minInstances: 0
   maxInstances: 2
 
-# apphosting.yaml
-
-run:
-  # You may have other settings here like cpu, memoryMiB, etc.
-
-  # Add this 'env' block to make the secret available to your backend
-  env:
-    - variable: GEMINI_API_KEY
-      secret: GEMINI_API_KEY
-
-# Other configurations for your app might be below
+secrets:
+  GEMINI_API_KEY: "GEMINI_API_KEY"
