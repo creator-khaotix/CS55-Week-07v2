@@ -37,7 +37,7 @@ export default function Restaurant({
     if (!image) {
       return;
     }
-
+  
     const imageURL = await updateRestaurantImage(id, image);
     setRestaurantDetails({ ...restaurantDetails, photo: imageURL });
   }
