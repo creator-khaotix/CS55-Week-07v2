@@ -1,7 +1,9 @@
 runConfig:
+  # Your run configuration settings, e.g.,
   minInstances: 0
   maxInstances: 2
-# apphosting.yaml
-  secrets:
-    - secret: GEMINI_API_KEY
-# ... other settings # The name of the secret in Secret Manager
+env:
+  
+  # This is the critical part for your Gemini API Key
+  - variable: GEMINI_API_KEY
+    secret: GEMINI_API_KEY # This should match the name you gave your secret when setting it
